@@ -8,9 +8,9 @@ import SwiftUI
 
 @main
 struct RepoBrowserApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  var body: some Scene {
+    WindowGroup {
+      AppView()
     }
+  }
 }
