@@ -7,6 +7,8 @@
 import SwiftUI
 
 struct RepoListView: View {
+  var language: String
+  
   @ObservedObject var viewModel = RepoViewModel()
   @State var searchField: String = ""
   @State var displayedRepos = [Repository]()
@@ -31,14 +33,14 @@ struct RepoListView: View {
               .navigationBarTitle(repository.name)) {
             RepositoryRowView(repository: repository)
           }
-        }.navigationBarTitle("swift repos")
+        }.navigationBarTitle("\(language.capitalized) Repos")
         Spacer()
       }.onAppear(perform: loadData)
     }
   }
 
   func loadData() {
-    Parser().fetchRepositories { (repos) in
+    Parser(language: language).fetchRepositories { (repos) in
       self.viewModel.repos = repos
       self.displayedRepos = repos
     }
@@ -55,6 +57,6 @@ struct RepoListView: View {
 
 struct RepoListView_Previews: PreviewProvider {
     static var previews: some View {
-        RepoListView()
+      RepoListView(language: "swift")
     }
 }

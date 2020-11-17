@@ -21,8 +21,8 @@ struct WebView: UIViewRepresentable {
 
 }
 
-struct WebView_Previews: PreviewProvider {
-  static var previews: some View {
-    WebView(request: URLRequest(url: URL(string: "https://www.github.com")!))
-  }
-}
+//struct WebView_Previews: PreviewProvider {
+//  static var previews: some View {
+//    WebView(request: URLRequest(url: URL(string: "https://www.github.com")!))
+//  }
+//}

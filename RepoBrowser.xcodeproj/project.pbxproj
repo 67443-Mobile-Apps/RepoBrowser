@@ -7,32 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B3F67BC7523FB565491E697 /* Pods_RepoBrowser_RepoBrowserUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0976678C40E90C06BC2963F /* Pods_RepoBrowser_RepoBrowserUITests.framework */; };
-		8D9265BBCDFA18860F64E228 /* Pods_RepoBrowserTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D0FB0853101535051DFCA10 /* Pods_RepoBrowserTests.framework */; };
 		E00D52FB7C35BF4E51CC319E /* Pods_RepoBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6794B2D0F691CAFB5127133 /* Pods_RepoBrowser.framework */; };
 		E7B05CC12563174900CF4427 /* RepoBrowserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B05CC02563174900CF4427 /* RepoBrowserApp.swift */; };
 		E7B05CC32563174900CF4427 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B05CC22563174900CF4427 /* AppView.swift */; };
 		E7B05CC52563174A00CF4427 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7B05CC42563174A00CF4427 /* Assets.xcassets */; };
 		E7B05CC82563174A00CF4427 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7B05CC72563174A00CF4427 /* Preview Assets.xcassets */; };
-		E7B05CD32563174A00CF4427 /* RepoBrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B05CD22563174A00CF4427 /* RepoBrowserTests.swift */; };
-		E7B05CDE2563174A00CF4427 /* RepoBrowserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B05CDD2563174A00CF4427 /* RepoBrowserUITests.swift */; };
 		E7B05CF225631D0C00CF4427 /* RepoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B05CF125631D0C00CF4427 /* RepoListView.swift */; };
 		E7B05CFD2563221200CF4427 /* RepositoryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B05CFC2563221200CF4427 /* RepositoryRowView.swift */; };
 		E7B05D022563222B00CF4427 /* RepositoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B05D012563222B00CF4427 /* RepositoryDetailView.swift */; };
 		E7B05D072563235900CF4427 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B05D062563235900CF4427 /* Repository.swift */; };
 		E7B05D0F2563237D00CF4427 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B05D0E2563237D00CF4427 /* Parser.swift */; };
 		E7F82B862563269500105C55 /* RepoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F82B852563269500105C55 /* RepoViewModel.swift */; };
+		E7F82BBC25634BD600105C55 /* RepoBrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F82BBB25634BD600105C55 /* RepoBrowserTests.swift */; };
+		E7F82BC625634C0E00105C55 /* ServerResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F82BC525634C0E00105C55 /* ServerResponseTests.swift */; };
+		E7F82BCA25634C4F00105C55 /* RepoParsingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F82BC925634C4F00105C55 /* RepoParsingTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E7B05CCF2563174A00CF4427 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E7B05CB52563174900CF4427 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E7B05CBC2563174900CF4427;
-			remoteInfo = RepoBrowser;
-		};
-		E7B05CDA2563174A00CF4427 /* PBXContainerItemProxy */ = {
+		E7F82BBE25634BD600105C55 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E7B05CB52563174900CF4427 /* Project object */;
 			proxyType = 1;
@@ -55,18 +47,17 @@
 		E7B05CC42563174A00CF4427 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7B05CC72563174A00CF4427 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E7B05CC92563174A00CF4427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E7B05CCE2563174A00CF4427 /* RepoBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepoBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7B05CD22563174A00CF4427 /* RepoBrowserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoBrowserTests.swift; sourceTree = "<group>"; };
-		E7B05CD42563174A00CF4427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E7B05CD92563174A00CF4427 /* RepoBrowserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepoBrowserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7B05CDD2563174A00CF4427 /* RepoBrowserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoBrowserUITests.swift; sourceTree = "<group>"; };
-		E7B05CDF2563174A00CF4427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7B05CF125631D0C00CF4427 /* RepoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListView.swift; sourceTree = "<group>"; };
 		E7B05CFC2563221200CF4427 /* RepositoryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryRowView.swift; sourceTree = "<group>"; };
 		E7B05D012563222B00CF4427 /* RepositoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailView.swift; sourceTree = "<group>"; };
 		E7B05D062563235900CF4427 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		E7B05D0E2563237D00CF4427 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		E7F82B852563269500105C55 /* RepoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoViewModel.swift; sourceTree = "<group>"; };
+		E7F82BB925634BD600105C55 /* RepoBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepoBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7F82BBB25634BD600105C55 /* RepoBrowserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoBrowserTests.swift; sourceTree = "<group>"; };
+		E7F82BBD25634BD600105C55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7F82BC525634C0E00105C55 /* ServerResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResponseTests.swift; sourceTree = "<group>"; };
+		E7F82BC925634C4F00105C55 /* RepoParsingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoParsingTests.swift; sourceTree = "<group>"; };
 		E81A46E165D1AECC6786AC97 /* Pods-RepoBrowser-RepoBrowserUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepoBrowser-RepoBrowserUITests.release.xcconfig"; path = "Target Support Files/Pods-RepoBrowser-RepoBrowserUITests/Pods-RepoBrowser-RepoBrowserUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F0976678C40E90C06BC2963F /* Pods_RepoBrowser_RepoBrowserUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RepoBrowser_RepoBrowserUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6794B2D0F691CAFB5127133 /* Pods_RepoBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RepoBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,19 +73,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E7B05CCB2563174A00CF4427 /* Frameworks */ = {
+		E7F82BB625634BD600105C55 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D9265BBCDFA18860F64E228 /* Pods_RepoBrowserTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E7B05CD62563174A00CF4427 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1B3F67BC7523FB565491E697 /* Pods_RepoBrowser_RepoBrowserUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,8 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				E7B05CBF2563174900CF4427 /* RepoBrowser */,
-				E7B05CD12563174A00CF4427 /* RepoBrowserTests */,
-				E7B05CDC2563174A00CF4427 /* RepoBrowserUITests */,
+				E7F82BBA25634BD600105C55 /* RepoBrowserTests */,
 				E7B05CBE2563174900CF4427 /* Products */,
 				B36451E6376A08A3AD20D5C0 /* Pods */,
 				5533231EB2BE0E7BD98974B3 /* Frameworks */,
@@ -142,8 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				E7B05CBD2563174900CF4427 /* RepoBrowser.app */,
-				E7B05CCE2563174A00CF4427 /* RepoBrowserTests.xctest */,
-				E7B05CD92563174A00CF4427 /* RepoBrowserUITests.xctest */,
+				E7F82BB925634BD600105C55 /* RepoBrowserTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,24 +148,6 @@
 				E7B05CC72563174A00CF4427 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		E7B05CD12563174A00CF4427 /* RepoBrowserTests */ = {
-			isa = PBXGroup;
-			children = (
-				E7B05CD22563174A00CF4427 /* RepoBrowserTests.swift */,
-				E7B05CD42563174A00CF4427 /* Info.plist */,
-			);
-			path = RepoBrowserTests;
-			sourceTree = "<group>";
-		};
-		E7B05CDC2563174A00CF4427 /* RepoBrowserUITests */ = {
-			isa = PBXGroup;
-			children = (
-				E7B05CDD2563174A00CF4427 /* RepoBrowserUITests.swift */,
-				E7B05CDF2563174A00CF4427 /* Info.plist */,
-			);
-			path = RepoBrowserUITests;
 			sourceTree = "<group>";
 		};
 		E7B05CF625631D1700CF4427 /* Views */ = {
@@ -216,6 +178,17 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		E7F82BBA25634BD600105C55 /* RepoBrowserTests */ = {
+			isa = PBXGroup;
+			children = (
+				E7F82BBB25634BD600105C55 /* RepoBrowserTests.swift */,
+				E7F82BC525634C0E00105C55 /* ServerResponseTests.swift */,
+				E7F82BBD25634BD600105C55 /* Info.plist */,
+				E7F82BC925634C4F00105C55 /* RepoParsingTests.swift */,
+			);
+			path = RepoBrowserTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -238,44 +211,23 @@
 			productReference = E7B05CBD2563174900CF4427 /* RepoBrowser.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E7B05CCD2563174A00CF4427 /* RepoBrowserTests */ = {
+		E7F82BB825634BD600105C55 /* RepoBrowserTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E7B05CE52563174A00CF4427 /* Build configuration list for PBXNativeTarget "RepoBrowserTests" */;
+			buildConfigurationList = E7F82BC025634BD600105C55 /* Build configuration list for PBXNativeTarget "RepoBrowserTests" */;
 			buildPhases = (
-				7C9493AB25D7C38BBF328108 /* [CP] Check Pods Manifest.lock */,
-				E7B05CCA2563174A00CF4427 /* Sources */,
-				E7B05CCB2563174A00CF4427 /* Frameworks */,
-				E7B05CCC2563174A00CF4427 /* Resources */,
+				E7F82BB525634BD600105C55 /* Sources */,
+				E7F82BB625634BD600105C55 /* Frameworks */,
+				E7F82BB725634BD600105C55 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E7B05CD02563174A00CF4427 /* PBXTargetDependency */,
+				E7F82BBF25634BD600105C55 /* PBXTargetDependency */,
 			);
 			name = RepoBrowserTests;
 			productName = RepoBrowserTests;
-			productReference = E7B05CCE2563174A00CF4427 /* RepoBrowserTests.xctest */;
+			productReference = E7F82BB925634BD600105C55 /* RepoBrowserTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		E7B05CD82563174A00CF4427 /* RepoBrowserUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E7B05CE82563174A00CF4427 /* Build configuration list for PBXNativeTarget "RepoBrowserUITests" */;
-			buildPhases = (
-				032E16322366C4FC2EAA46EA /* [CP] Check Pods Manifest.lock */,
-				E7B05CD52563174A00CF4427 /* Sources */,
-				E7B05CD62563174A00CF4427 /* Frameworks */,
-				E7B05CD72563174A00CF4427 /* Resources */,
-				B0F10887430E69244991235E /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E7B05CDB2563174A00CF4427 /* PBXTargetDependency */,
-			);
-			name = RepoBrowserUITests;
-			productName = RepoBrowserUITests;
-			productReference = E7B05CD92563174A00CF4427 /* RepoBrowserUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -289,11 +241,7 @@
 					E7B05CBC2563174900CF4427 = {
 						CreatedOnToolsVersion = 12.2;
 					};
-					E7B05CCD2563174A00CF4427 = {
-						CreatedOnToolsVersion = 12.2;
-						TestTargetID = E7B05CBC2563174900CF4427;
-					};
-					E7B05CD82563174A00CF4427 = {
+					E7F82BB825634BD600105C55 = {
 						CreatedOnToolsVersion = 12.2;
 						TestTargetID = E7B05CBC2563174900CF4427;
 					};
@@ -313,8 +261,7 @@
 			projectRoot = "";
 			targets = (
 				E7B05CBC2563174900CF4427 /* RepoBrowser */,
-				E7B05CCD2563174A00CF4427 /* RepoBrowserTests */,
-				E7B05CD82563174A00CF4427 /* RepoBrowserUITests */,
+				E7F82BB825634BD600105C55 /* RepoBrowserTests */,
 			);
 		};
 /* End PBXProject section */
@@ -329,14 +276,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E7B05CCC2563174A00CF4427 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E7B05CD72563174A00CF4427 /* Resources */ = {
+		E7F82BB725634BD600105C55 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -346,28 +286,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		032E16322366C4FC2EAA46EA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RepoBrowser-RepoBrowserUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		505F04D559CD37D37C1EC5E9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -383,45 +301,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RepoBrowser/Pods-RepoBrowser-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7C9493AB25D7C38BBF328108 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RepoBrowserTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B0F10887430E69244991235E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RepoBrowser-RepoBrowserUITests/Pods-RepoBrowser-RepoBrowserUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RepoBrowser-RepoBrowserUITests/Pods-RepoBrowser-RepoBrowserUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RepoBrowser-RepoBrowserUITests/Pods-RepoBrowser-RepoBrowserUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B8CB83D1BCF1E8CE82546BE9 /* [CP] Check Pods Manifest.lock */ = {
@@ -464,34 +343,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E7B05CCA2563174A00CF4427 /* Sources */ = {
+		E7F82BB525634BD600105C55 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7B05CD32563174A00CF4427 /* RepoBrowserTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E7B05CD52563174A00CF4427 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E7B05CDE2563174A00CF4427 /* RepoBrowserUITests.swift in Sources */,
+				E7F82BCA25634C4F00105C55 /* RepoParsingTests.swift in Sources */,
+				E7F82BBC25634BD600105C55 /* RepoBrowserTests.swift in Sources */,
+				E7F82BC625634C0E00105C55 /* ServerResponseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E7B05CD02563174A00CF4427 /* PBXTargetDependency */ = {
+		E7F82BBF25634BD600105C55 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E7B05CBC2563174900CF4427 /* RepoBrowser */;
-			targetProxy = E7B05CCF2563174A00CF4427 /* PBXContainerItemProxy */;
-		};
-		E7B05CDB2563174A00CF4427 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E7B05CBC2563174900CF4427 /* RepoBrowser */;
-			targetProxy = E7B05CDA2563174A00CF4427 /* PBXContainerItemProxy */;
+			targetProxy = E7F82BBE25634BD600105C55 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -658,16 +526,13 @@
 			};
 			name = Release;
 		};
-		E7B05CE62563174A00CF4427 /* Debug */ = {
+		E7F82BC125634BD600105C55 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 160AE70ABA0B59D44961EA08 /* Pods-RepoBrowserTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X94WPSRU4C;
 				INFOPLIST_FILE = RepoBrowserTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -681,16 +546,13 @@
 			};
 			name = Debug;
 		};
-		E7B05CE72563174A00CF4427 /* Release */ = {
+		E7F82BC225634BD600105C55 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5875FF71D19EEAE22BF96E32 /* Pods-RepoBrowserTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X94WPSRU4C;
 				INFOPLIST_FILE = RepoBrowserTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -701,48 +563,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RepoBrowser.app/RepoBrowser";
-			};
-			name = Release;
-		};
-		E7B05CE92563174A00CF4427 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF9F3AB71877E6797CA1B46D /* Pods-RepoBrowser-RepoBrowserUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X94WPSRU4C;
-				INFOPLIST_FILE = RepoBrowserUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.profh.RepoBrowserUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = RepoBrowser;
-			};
-			name = Debug;
-		};
-		E7B05CEA2563174A00CF4427 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E81A46E165D1AECC6786AC97 /* Pods-RepoBrowser-RepoBrowserUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X94WPSRU4C;
-				INFOPLIST_FILE = RepoBrowserUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.profh.RepoBrowserUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = RepoBrowser;
 			};
 			name = Release;
 		};
@@ -767,20 +587,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E7B05CE52563174A00CF4427 /* Build configuration list for PBXNativeTarget "RepoBrowserTests" */ = {
+		E7F82BC025634BD600105C55 /* Build configuration list for PBXNativeTarget "RepoBrowserTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E7B05CE62563174A00CF4427 /* Debug */,
-				E7B05CE72563174A00CF4427 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E7B05CE82563174A00CF4427 /* Build configuration list for PBXNativeTarget "RepoBrowserUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E7B05CE92563174A00CF4427 /* Debug */,
-				E7B05CEA2563174A00CF4427 /* Release */,
+				E7F82BC125634BD600105C55 /* Debug */,
+				E7F82BC225634BD600105C55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -11,29 +11,23 @@ struct AppView: View {
     
     TabView {
 
-      RepoListView()
+      RepoListView(language: "swift")
       .tabItem {
           Image("swift_icon")
           Text("Swift")
       }
 
-      RepoListView()
+      RepoListView(language: "ruby")
       .tabItem {
           Image("ruby_icon")
           Text("Ruby")
       }
       
-      RepoListView()
+      RepoListView(language: "kotlin")
       .tabItem {
-          Image("python_icon")
-          Text("Python")
+          Image("android-3-16")
+          Text("Kotlin")
       }
-      
-//      RepoListView()
-//      .tabItem {
-//          Image("kotlin_icon")
-//          Text("Kotlin")
-//      }
       
     }
   }
