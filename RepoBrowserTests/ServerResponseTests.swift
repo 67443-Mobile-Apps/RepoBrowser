@@ -44,5 +44,21 @@ class ServerResponseTests: XCTestCase {
     }
     .resume()
   }
+  
+  // Now test the case with GitHub API for Kotlin
+  func test_ServerResponseForKotlin() {
+    let expectation = self.expectation(description: "Server responds in reasonable time")
+    defer { waitForExpectations(timeout: 2) }
+
+    let url = URL(string: "https://api.github.com/search/repositories?q=language:kotlin&sort=stars&order=desc")!
+    URLSession.shared.dataTask(with: url) { data, response, error in
+      defer { expectation.fulfill() }
+
+      XCTAssertNotNil(data)
+      XCTAssertNotNil(response)
+      XCTAssertNil(error)
+    }
+    .resume()
+  }
 
 }

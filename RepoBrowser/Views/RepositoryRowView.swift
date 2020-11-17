@@ -13,7 +13,7 @@ struct RepositoryRowView: View {
     VStack(alignment: .leading) {
       Text(repository.name)
         .font(.headline)
-      Text(repository.itemDescription)
+      Text(repository.itemDescription ?? "N/A")
         .font(.subheadline)
         .lineLimit(1)
     }

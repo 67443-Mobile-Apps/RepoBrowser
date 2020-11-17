@@ -8,6 +8,8 @@ import XCTest
 @testable import RepoBrowser
 
 class RepoParsingTests: XCTestCase {
+  
+  let expired = 3.0
 
   // MARK: - Testing Repository Parsing for Swift
   
@@ -27,7 +29,7 @@ class RepoParsingTests: XCTestCase {
     }
     
     // Wait how long...
-    waitForExpectations(timeout: 2)
+    waitForExpectations(timeout: expired)
     
   }
   
@@ -41,7 +43,7 @@ class RepoParsingTests: XCTestCase {
       expectation.fulfill()
     }
     
-    waitForExpectations(timeout: 2)
+    waitForExpectations(timeout: expired)
   }
   
   func test_ParseSwiftReposCounted() {
@@ -54,38 +56,47 @@ class RepoParsingTests: XCTestCase {
       expectation.fulfill()
     }
 
-    waitForExpectations(timeout: 2)
+    waitForExpectations(timeout: expired)
   }
   
   // MARK: - Testing Repository Parsing for Ruby
   
   func test_ParseFirstRubyRepo() {
     
-    let swiftParser = Parser(language: "ruby")
+    // Given...
+    let parser = parserFor("ruby")
     let expectation = self.expectation(description: "Able to parse the ruby-related repos")
-
-    swiftParser.fetchRepositories  { (repos) in
-      XCTAssertEqual(repos.first?.name, "rails")
-      expectation.fulfill()
-    }
+    defer { waitForExpectations(timeout: expired) }
     
-    waitForExpectations(timeout: 2)
+    // When...
+    parser.fetchRepositories  { (repos) in
+      
+      defer { expectation.fulfill() }
+      
+      XCTAssertEqual(repos.first?.name, "rails")
+      XCTAssertEqual(repos.first?.htmlURL, "https://github.com/rails/rails")
+      XCTAssertEqual(repos.first?.itemDescription, "Ruby on Rails")
+    }
   }
   
   // MARK: - Testing Repository Parsing for Kotlin
   
   func test_ParseFirstKotlinRepo() {
     
-    let swiftParser = Parser(language: "kotlin")
+    let parser = parserFor("kotlin")
     let expectation = self.expectation(description: "Able to parse the kotlin-related repos")
-    expectation.isInverted = true
+//    expectation.isInverted = true
+    defer { waitForExpectations(timeout: expired) }
 
-    swiftParser.fetchRepositories  { (repos) in
+    parser.fetchRepositories  { (repos) in
       XCTAssertEqual(repos.first?.name, "architecture-samples")
       expectation.fulfill()
     }
-    
-    waitForExpectations(timeout: 2)
+  }
+  
+  private func parserFor(_ language: String) -> Parser {
+    let parser = Parser(language: language)
+    return parser
   }
   
 

@@ -181,10 +181,10 @@
 		E7F82BBA25634BD600105C55 /* RepoBrowserTests */ = {
 			isa = PBXGroup;
 			children = (
-				E7F82BBB25634BD600105C55 /* RepoBrowserTests.swift */,
 				E7F82BC525634C0E00105C55 /* ServerResponseTests.swift */,
-				E7F82BBD25634BD600105C55 /* Info.plist */,
 				E7F82BC925634C4F00105C55 /* RepoParsingTests.swift */,
+				E7F82BBB25634BD600105C55 /* RepoBrowserTests.swift */,
+				E7F82BBD25634BD600105C55 /* Info.plist */,
 			);
 			path = RepoBrowserTests;
 			sourceTree = "<group>";
