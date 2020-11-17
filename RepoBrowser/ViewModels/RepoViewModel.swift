@@ -23,20 +23,4 @@ class RepoViewModel: ObservableObject {
     }
   }
   
-//  func loadData() {
-//    Parser().fetchRepositories { (repos) in
-//      self.viewModel.repos = repos
-//      self.displayedRepos = repos
-//    }
-//  }
-//
-//  func displayRepos() {
-//    if searchField == "" {
-//      displayedRepos = viewModel.repos
-//    } else {
-//      displayedRepos = viewModel.filteredRepos
-//    }
-//  }
-  
-  
 }

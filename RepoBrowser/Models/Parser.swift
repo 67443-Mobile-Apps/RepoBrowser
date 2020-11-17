@@ -15,8 +15,6 @@ class Parser {
   init(language: String) {
     self.language = language
     self.urlString = "https://api.github.com/search/repositories?q=language:\(self.language.lowercased())&sort=stars&order=desc"
-//    self.urlString = "https://api.github.com/search/repositories?q=language:\(self.language.lowercased())&sort=stars&order=desc&per_page=20"
-
   }
   
   func fetchRepositories(completionHandler: @escaping ([Repository]) -> Void) {
